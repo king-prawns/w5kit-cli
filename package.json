@@ -9,6 +9,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "webpack4",
+    "cli",
+    "webpack4-starter-kit"
+  ],
   "author": "Giorgio Gamberoni <giorgio.gamberoni@gmail.com> (https://github.com/king-prawns)",
   "license": "MIT",
   "homepage": "https://github.com/king-prawns/w4kit-cli#readme",
