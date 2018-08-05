@@ -6,7 +6,6 @@ Simple CLI for webpack4-starter-kit project.
 
 ## Requirements
 
-- Node >= v6.x
 - Yarn >= v1.1
 
 ## Installation
