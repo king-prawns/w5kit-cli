@@ -1,37 +1,38 @@
 #!/usr/bin/env node
 
 const clear    = require('clear');
-const chalk    = require('chalk');
-const figlet   = require('figlet');
 const cs       = require('./lib/constants');
+const msg      = require('./lib/messages');
 const inquirer = require('./lib/inquirer');
 const repo     = require('./lib/repo');
 
 clear();
 
-console.log(
-  chalk.yellow(
-    figlet.textSync('w4kit', { horizontalLayout: 'full' })
-  )
-);
+msg.welcome();
 
 const run = async () => {
   try {
-    // Check initial choice
+    // Initial choice
     const {create} = await inquirer.askInitialChoice();
 
     if(create === cs.QUIT) {
-      return console.log(chalk.yellow(`Ok, bye ${process.env.USER}!`));
+      return msg.goodbye();
     }
 
     // Clone remote repository
-    const folder = await repo.clone(create);
+    const {path, name} = await repo.clone(create);
 
+    // Setup local repository
+    const done = await repo.setupRepo(path, name);
+
+    if(done) {
+      msg.done(name);
+    }
   } catch(err) {
     if (err) {
-          console.log(err);
-      }
+      console.log(err);
     }
+  }
 }
 
 run();
