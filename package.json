@@ -1,6 +1,6 @@
 {
   "name": "w4kit-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI for webpack-4-starter-kit",
   "main": "src/index.js",
   "bin": {
