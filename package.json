@@ -24,7 +24,7 @@
     "figlet": "1.2.0",
     "fs-extra": "7.0.0",
     "inquirer": "6.0.0",
-    "nodegit": "0.22.2"
+    "nodegit": "0.24.0"
   },
   "devDependencies": {}
 }
