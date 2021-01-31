@@ -1,4 +1,4 @@
-# w4kit-CLI
+# w5kit-CLI
 
 [![npm version](https://badge.fury.io/js/w5kit-cli.svg)](https://badge.fury.io/js/w5kit-cli)
 
