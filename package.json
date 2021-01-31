@@ -1,6 +1,6 @@
 {
   "name": "w5kit-cli",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "CLI for webpack5-starter-kit",
   "main": "src/index.js",
   "bin": {
