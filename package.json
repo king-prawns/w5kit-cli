@@ -18,8 +18,7 @@
   "author": "Giorgio Gamberoni <giorgio.gamberoni@gmail.com> (https://github.com/king-prawns)",
   "license": "MIT",
   "homepage": "https://github.com/king-prawns/w5kit-cli#readme",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "chalk": "4.1.0",
     "clear": "0.1.0",
     "clui": "0.3.6",
@@ -27,5 +26,6 @@
     "fs-extra": "9.1.0",
     "inquirer": "7.3.3",
     "nodegit": "0.27.0"
-  }
+  },
+  "devDependencies": {}
 }
